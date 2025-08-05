@@ -1,0 +1,7 @@
+El programa para la estación de clasificación dispone de 3 contadores (piezas rojas, metálicas y negras).
+Una vez que cualquiera de estos contadores alcanza el valor 6 y se recibe una nueva pieza, la estación no
+comenzará su funcionamiento hasta que:
+-Se presiona el botón "Start", esto hará que la estación clasifique la pieza dada y aumente el contador
+de dicha pieza en 1, si se agrega otra pieza adicional, ocurre lo mismo.
+-Se presiona el botón "Reset", esto hará que la estación reinicie los contadores, por lo que volverá a
+su estado inicial y se deberá de pulsar el botón "Start" para comenzar la clasificación.

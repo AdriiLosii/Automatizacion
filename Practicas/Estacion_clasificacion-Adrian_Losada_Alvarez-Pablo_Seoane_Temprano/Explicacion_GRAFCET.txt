@@ -1,0 +1,10 @@
+En el estado inicial se hace un reset de los contadores de cada tipo de pieza. Una vez se pulse el botón de "Start"
+(I1.0) se pasa al estado 1, en donde se hace un reset de la cinta de avance (Q0.0) y un reset de la retracción del
+cilindro (Q0.3), es decir, se extiende el cilindro. Una vez se detecta una pieza (del tipo que sea) (I0.0) se pasa
+al estado 2, en donde se hace un set de la cinta (Q0.0) por lo que la pieza avanzará hasta el cilindro y donde se
+realizará la lectura del tipo de pieza según los distintos sensores. Tras 3 segundos, la pieza ya ha sido analizada
+y según la salida de los sensores se identifica si es una pieza roja, metálica o negra y se despliegan (o no) los
+deflectores correspondientes (Q0.1 o Q0.2) a la vez que se aumenta en 1 el valor del contador de dicha pieza.
+Finalmente, se detecta la caída de la pieza en la rampa (I0.2) para verificar que la pieza ya está clasificada,
+y si alguno de los contadores ha alcanzado el valor de 6, el sistema vuelve al valor inicial, mientras que si esto
+no es así, la secuencia se repite.
